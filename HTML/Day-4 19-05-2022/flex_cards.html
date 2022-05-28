@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flex Card</title>
+    <style>
+        body {
+            background-color: rgb(248, 243, 243);
+        }
+
+        #container {
+            display: flex;
+            width: 70%;
+            margin: auto;
+
+        }
+
+        #container>div {
+            width: 32%;
+            margin: 8px;
+            background-color: white;
+
+        }
+
+        div>img {
+            width: 100%;
+        }
+
+        #container>div>p:nth-child(2) {
+            font-weight: bolder;
+            font-size: 18px;
+            margin: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #container>div>div>p:first-child {
+            color: red;
+            padding: 0px 10px 0px 10px;
+        }
+
+        #container>div>div>p:last-child {
+            color: grey;
+        }
+
+        #container>div>div {
+            display: flex;
+            height: 40px;
+            margin: auto;
+            margin-bottom: 5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div><img src="https://www.thestatesman.com/wp-content/uploads/2022/05/iStock-1208863464.jpg" alt="">
+            <p>Monkeypox cases identified in Europe, US, Canada and Australia</p>
+            <div>
+                <p>|</p>
+                <p>BIOLOGY</p>
+            </div>
+        </div>
+        <div><img
+                src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAXvdPw.img?h=1080&w=1920&m=6&q=60&o=f&l=f"
+                alt="">
+            <p>Gyanvapi Masjid Row: 12 Things You May Not Know about Shiva Linga</p>
+            <div>
+                <p>|</p>
+                <p>MYTHOLOGY</p>
+            </div>
+        </div>
+        <div><img src="https://www.thestatesman.com/wp-content/uploads/2022/05/Grape-varieties-main.jpg" alt="">
+            <p>10 Surprisingly beneficial attributes of Vitamin C rich Grapes</p>
+            <div>
+                <p>|</p>
+                <p>LIFESTYLE</p>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div><img src="https://www.thestatesman.com/wp-content/uploads/2022/05/13ddcec79defc00a02ef9213e392d795-1.jpg"
+                alt="">
+            <p>‘ANEK’ special promo in Kolkata: Today onward’s</p>
+            <div>
+                <p>|</p>
+                <p>ENTERTAINMENT</p>
+            </div>
+        </div>
+        <div><img src="https://www.thestatesman.com/wp-content/uploads/2022/05/mlc.jpg" alt="">
+            <p>Major League Cricket raises 120 million dollars in funding</p>
+            <div>
+                <p>|</p>
+                <p>SPORTS</p>
+            </div>
+        </div>
+        <div><img src="https://www.thestatesman.com/wp-content/uploads/2022/05/823ba5852815e56f7e7ec2e21f99e9a4.jpg"
+                alt="">
+            <p>Musk puts $44 bn Twitter deal ‘on hold’ over fake user accounts</p>
+            <div>
+                <p>|</p>
+                <p>BUSINESS</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

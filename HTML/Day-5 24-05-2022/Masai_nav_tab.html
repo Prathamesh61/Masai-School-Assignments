@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Masai NavBar</title>
+    <style>
+        #container {
+
+            margin: auto;
+            display: flex;
+            width: 80%;
+            height: fit-content;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #container>div:first-child {
+            width: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+
+        #container>div+div {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 70%;
+            margin: auto;
+        }
+
+        #container>div+div>p {
+            font-size: small;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: uppercase;
+            border: none;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        #container>div+div>p:hover {
+            color: #ee237e;
+            background-color: #f7eef2;
+        }
+
+        #container>div+div>select {
+            border: none;
+            border-radius: 5px;
+            font-size: 12px;
+            padding: 5px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        #container>div+div>select:hover {
+            color: #ee237e;
+            background-color: #f7eef2;
+        }
+
+        #container>div+div:last-child>button {
+            padding: 10px;
+            font-size: 15px;
+            border: 2px solid #ee237e;
+            background-color: white;
+            color: #ee237e;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        #container>div+div:last-child>button:hover {
+            background-color: #f7eef2;
+        }
+
+        #container>div:last-child>div {
+            border-radius: 5px;
+            padding: 0px 15px 0px 15px;
+            border: none;
+            text-transform: uppercase;
+            display: flex;
+            font-size: 12px;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f2fdff;
+            color: #95b6e9;
+        }
+
+        #container>div:last-child>div:hover {
+            background-color: #9fe9f6;
+            border: 1px solid #95b6e9;
+        }
+
+        #container>div:last-child>div>img {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* #container>div>div>p {
+            margin: auto;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div><img src="https://www.masaischool.com/img/navbar/logo.svg" alt="error"></div>
+        <div>
+            <select>
+                <option value="">Courses</option>
+            </select>
+            <p>fees & isa</p>
+            <p>about us</p>
+            <p>hire from us</p>
+            <p>faq</p>
+            <p>events</p>
+            <div>
+                <p>refer & earn</p>&nbsp;
+                <img src="https://www.masaischool.com/img/referral/hand.png" alt="">
+            </div>
+            <Button>Login</Button>
+            </select>
+        </div>
+    </div>
+</body>
+
+</html>

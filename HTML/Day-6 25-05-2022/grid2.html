@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Grid 1</title>
+    <style>
+        #container {
+            width: 40%;
+            margin: 50px auto 50px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 100px);
+            gap: 20px;
+            grid-template-areas:
+                "A A B E"
+                "C D B E";
+        }
+
+        #container>div {
+            background-color: #444444;
+            border-radius: 10px;
+            display: grid;
+            justify-content: start;
+            padding-left: 30px;
+            font-weight: bolder;
+            align-items: center;
+            font-size: x-large;
+        }
+
+        #container>div:nth-child(1) {
+            color: white;
+            grid-area: A;
+        }
+
+        #container>div:nth-child(2) {
+            color: white;
+            grid-area: B;
+        }
+
+        #container>div:nth-child(3) {
+
+            color: white;
+            grid-area: C;
+        }
+
+        #container>div:nth-child(4) {
+            color: white;
+            grid-area: D;
+        }
+
+        #container>div:nth-child(5) {
+            color: white;
+            grid-area: E;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+
+    </div>
+
+</body>
+
+</html>

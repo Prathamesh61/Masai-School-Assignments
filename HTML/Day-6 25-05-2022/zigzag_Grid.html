@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Zigzag Grid</title>
+    <style>
+        #container {
+            width: 40%;
+            margin: 50px auto 50px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 120px);
+            gap: 30px;
+            grid-template-areas:
+                "A B B C"
+                "D D E F"
+                "G H I I";
+        }
+
+        #container>div {
+            background-color: #217867;
+            border-radius: 5px;
+            display: grid;
+            justify-content: start;
+            padding-left: 30px;
+            font-weight: bolder;
+            align-items: center;
+            font-size: x-large;
+        }
+
+        #container>div:nth-child(1) {
+            color: white;
+            grid-area: A;
+        }
+
+        #container>div:nth-child(2) {
+            color: white;
+            grid-area: B;
+        }
+
+        #container>div:nth-child(3) {
+
+            color: white;
+            grid-area: C;
+        }
+
+        #container>div:nth-child(4) {
+
+            color: white;
+            grid-area: D;
+        }
+
+        #container>div:nth-child(5) {
+
+            color: white;
+            grid-area: E;
+        }
+
+        #container>div:nth-child(6) {
+
+            color: white;
+            grid-area: F;
+        }
+
+        #container>div:nth-child(7) {
+
+            color: white;
+            grid-area: G;
+        }
+
+        #container>div:nth-child(8) {
+
+            color: white;
+            grid-area: H;
+        }
+
+        #container>div:nth-child(9) {
+
+            color: white;
+            grid-area: I;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            margin: auto;
+        }
+
+        #container {
+
+            margin: auto;
+            width: fit-content;
+            margin-top: 50px;
+            display: flex;
+        }
+
+        .box {
+            width: 40px;
+            height: 40px;
+
+        }
+
+        .leftCol {
+
+            width: fit-content;
+            margin: auto;
+
+        }
+
+        #left {
+
+            width: fit-content;
+            margin: auto;
+            display: flex;
+        }
+
+
+        #middle {
+
+            width: fit-content;
+            margin: auto;
+            /* margin-top: 10px; */
+        }
+
+        #middleFirst {
+
+            height: 50%;
+
+        }
+
+        #middleSecond {
+
+            height: 50%;
+            margin: auto;
+        }
+
+        #right {
+
+            width: 40%;
+            margin: auto;
+            display: flex;
+        }
+
+        .rightCol {
+
+            width: fit-content;
+            margin: auto;
+
+        }
+
+        #bottom {
+
+            width: 70%;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .bottomrow {
+
+            display: flex;
+        }
+
+        #leftRowMargin {
+            margin: auto;
+        }
+
+        #si {
+            width: 100px;
+            height: 100px;
+            border: 3px solid black;
+            background-color: green;
+            margin: 10px;
+            padding: 5px;
+
+        }
+
+        .bottomBoxColor1 {
+            background-color: darkolivegreen;
+            border: 1px solid rgb(50, 99, 50);
+            color: white;
+        }
+
+        .bottomBoxColor1>p {
+            padding-top: 3px;
+            text-align: center;
+            padding-right: 3px;
+        }
+
+        .bottomBoxColor2 {
+            background-color: #9ab75c;
+            border: 1px solid rgb(50, 99, 50);
+            color: black;
+        }
+
+        .bottomBoxColor2>p {
+            padding-top: 3px;
+            text-align: center;
+            padding-right: 3px;
+        }
+
+        .leftBoxColor1 {
+            background-color: #9ab75c;
+            color: white;
+            margin: 3px;
+            border: 2px solid black;
+        }
+
+        .leftBoxColor2 {
+            background-color: #ff616f;
+            color: black;
+            margin: 3px;
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        .leftBoxColor3 {
+            background-color: #ffcccb;
+            color: black;
+            margin: 3px;
+            border: 3px solid black;
+        }
+
+        .leftBoxColor3fornull {
+            border: 2px solid white;
+            color: black;
+            margin: 3px;
+
+        }
+
+        #si>div:first-child {
+            text-align: right;
+            font-size: 15px;
+            margin-top: -10px;
+        }
+
+        #si>div:last-child {
+            text-align: left;
+            font-size: 15px;
+            margin-top: -10px;
+
+        }
+
+        #si>div:nth-child(2) {
+            text-align: left;
+            font-size: 22px;
+
+            margin-top: -10px;
+        }
+
+        .middleBox {
+            background-color: blue;
+            border: 1px solid black;
+            margin: 2px;
+        }
+
+        .rightBoxcolOrange {
+            background-color: orange;
+            border: 1px solid black;
+            margin: 3px;
+        }
+
+        .rightBoxcolpink {
+            background-color: #ff4081;
+            margin: 3px;
+            border: 1px solid black;
+        }
+
+        .rightBoxcolmagenta {
+            background-color: #9c27b0;
+            margin: 3px;
+            border: 1px solid black;
+        }
+
+        .rightBoxcolyellow {
+            background-color: yellow;
+            margin: 3px;
+            border: 1px solid black;
+        }
+
+        .rightBoxcolgreen {
+            background-color: green;
+            margin: 3px;
+            border: 1px solid black;
+        }
+
+        .rightBoxcolbrown {
+            background-color: #8c6e6c;
+            margin: 3px;
+            border: 1px solid black;
+        }
+
+        .class {
+            background-color: red;
+            color: white;
+            border: 2px solid black;
+
+
+        }
+
+        .class>p {
+            font-size: 20px;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div style=" width:fit-content;height: 700px;margin: auto;">
+        <div>
+            <h1>THE PERIODIC TABLE OF ELEMENTS</h1>
+        </div>
+        <div id="container">
+            <div id="left">
+                <div class="leftCol">
+                    <div class="box leftRowMargin leftBoxColor1 class">
+                        <p>H</p>
+                    </div>
+                    <div class="box leftRowMargin leftBoxColor1"></div>
+                    <div class="box leftRowMargin leftBoxColor1"></div>
+                    <div class="box leftRowMargin leftBoxColor1"></div>
+                    <div class="box leftRowMargin leftBoxColor1"></div>
+                    <div class="box leftRowMargin leftBoxColor1"></div>
+                    <div class="box leftRowMargin leftBoxColor1"></div>
+                </div>
+                <div class="leftCol">
+                    <div class="box leftBoxColor3fornull">
+                        <p></p>
+                    </div>
+                    <div class="box leftRowMargin leftBoxColor2">
+                        <p>4</p>
+                    </div>
+                    <div class="box leftRowMargin leftBoxColor2">
+                        <p>12</p>
+                    </div>
+                    <div class="box leftRowMargin leftBoxColor2">
+                        <p>20</p>
+                    </div>
+                    <div class="box leftRowMargin leftBoxColor2">
+                        <p>38</p>
+                    </div>
+                    <div class="box leftRowMargin leftBoxColor2">
+                        <p>56</p>
+                    </div>
+                    <div class="box leftRowMargin leftBoxColor2">
+                        <p>88</p>
+                    </div>
+                </div>
+                <div class="leftCol">
+                    <div class="box leftRowMargin leftBoxColor3fornull"></div>
+                    <div class="box leftRowMargin leftBoxColor3fornull"></div>
+                    <div class="box leftRowMargin leftBoxColor3fornull"></div>
+                    <div class="box leftRowMargin leftBoxColor3fornull"></div>
+                    <div class="box leftRowMargin leftBoxColor3fornull"></div>
+                    <div class="box leftRowMargin leftBoxColor3"></div>
+                    <div class="box leftRowMargin leftBoxColor3"></div>
+                </div>
+            </div>
+            <div id="middle">
+                <div id="middleFirst">
+                    <div id="si">
+                        <div>
+                            <p>14</p>
+                        </div>
+                        <div>
+                            <p>Si</p>
+                        </div>
+                        <div>
+                            <p>Silicon</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="middleSecond">
+                    <div style="display: flex;">
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                    </div>
+                    <div style="display: flex;">
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                    </div>
+                    <div style="display: flex;">
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                    </div>
+                    <div style="display: flex;">
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                        <div class="box middleBox"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <div class="rightCol">
+                    <div class="box leftBoxColor3fornull"></div>
+                    <div class="box rightBoxcolmagenta"></div>
+                    <div class="box rightBoxcolOrange"></div>
+                    <div class="box rightBoxcolOrange"></div>
+                    <div class="box rightBoxcolOrange"></div>
+                    <div class="box rightBoxcolOrange"></div>
+                    <div class="box rightBoxcolbrown"></div>
+                </div>
+                <div class="rightCol">
+                    <div class="box leftBoxColor3fornull"></div>
+                    <div class="box rightBoxcolgreen"></div>
+                    <div class="box rightBoxcolmagenta"></div>
+                    <div class="box rightBoxcolmagenta"></div>
+                    <div class="box rightBoxcolOrange"></div>
+                    <div class="box rightBoxcolOrange"></div>
+                    <div class="box rightBoxcolbrown"></div>
+                </div>
+                <div class="rightCol">
+                    <div class="box leftBoxColor3fornull"></div>
+                    <div class="box rightBoxcolgreen"></div>
+                    <div class="box rightBoxcolgreen"></div>
+                    <div class="box rightBoxcolmagenta"></div>
+                    <div class="box rightBoxcolmagenta"></div>
+                    <div class="box rightBoxcolOrange"></div>
+                    <div class="box rightBoxcolbrown"></div>
+                </div>
+                <div class="rightCol">
+                    <div class="box leftBoxColor3fornull"></div>
+                    <div class="box rightBoxcolgreen"></div>
+                    <div class="box rightBoxcolgreen"></div>
+                    <div class="box rightBoxcolgreen"></div>
+                    <div class="box rightBoxcolmagenta"></div>
+                    <div class="box rightBoxcolmagenta"></div>
+                    <div class="box rightBoxcolbrown"></div>
+                </div>
+                <div class="rightCol">
+                    <div class="box leftBoxColor3fornull"></div>
+                    <div class="box rightBoxcolpink"></div>
+                    <div class="box rightBoxcolpink"></div>
+                    <div class="box rightBoxcolpink"></div>
+                    <div class="box rightBoxcolpink"></div>
+                    <div class="box rightBoxcolpink"></div>
+                    <div class="box rightBoxcolbrown"></div>
+                </div>
+                <div class="rightCol">
+                    <div class="box rightBoxcolyellow"></div>
+                    <div class="box rightBoxcolyellow"></div>
+                    <div class="box rightBoxcolyellow"></div>
+                    <div class="box rightBoxcolyellow"></div>
+                    <div class="box rightBoxcolyellow"></div>
+                    <div class="box rightBoxcolyellow"></div>
+                    <div class="box rightBoxcolbrown"></div>
+                </div>
+            </div>
+        </div>
+        <div id="bottom">
+            <div class="bottomrow">
+                <div class="box bottomBoxColor1">
+                    <p>La</p>
+                </div>
+                <div class="box bottomBoxColor1"></div>
+                <div class="box bottomBoxColor1"></div>
+                <div class="box bottomBoxColor1"></div>
+                <div class="box bottomBoxColor1"></div>
+                <div class="box bottomBoxColor1"></div>
+                <div class="box bottomBoxColor1"></div>
+                <div class="box bottomBoxColor1"></div>
+                <div class="box bottomBoxColor1"></div>
+                <div class="box bottomBoxColor1"></div>
+                <div class="box bottomBoxColor1"></div>
+                <div class="box bottomBoxColor1"></div>
+                <div class="box bottomBoxColor1"></div>
+                <div class="box bottomBoxColor1"></div>
+            </div>
+            <div class="bottomrow">
+                <div class="box bottomBoxColor2"></div>
+                <div class="box bottomBoxColor2"></div>
+                <div class="box bottomBoxColor2"></div>
+                <div class="box bottomBoxColor2"></div>
+                <div class="box bottomBoxColor2"></div>
+                <div class="box bottomBoxColor2"></div>
+                <div class="box bottomBoxColor2">
+                    <p>Am</p>
+                </div>
+                <div class="box bottomBoxColor2"></div>
+                <div class="box bottomBoxColor2"></div>
+                <div class="box bottomBoxColor2"></div>
+                <div class="box bottomBoxColor2"></div>
+                <div class="box bottomBoxColor2"></div>
+                <div class="box bottomBoxColor2"></div>
+                <div class="box bottomBoxColor2">
+                    <p>No</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
