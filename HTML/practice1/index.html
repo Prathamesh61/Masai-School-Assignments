@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U2C3 Mock</title>
+    <style></style>
+  </head>
+  <body>
+    <form>
+      <select id="month">
+        <option value="January">JANUARY</option>
+        <option value="February">FEB</option>
+        <option value="MARCH">MARCH</option>
+        <option value="APRIL">APRIL</option>
+        <option value="MAY">MAY</option>
+        <option value="JUNE">JUNE</option>
+        <option value="JULY">JULY</option>
+        <option value="AUGUST">AUGUST</option>
+        <option value="SEPETEMBER">SEPETEMBER</option>
+        <option value="OCTOBER">OCTOBER</option>
+        <option value="NOVEMBER">NOVEMBER</option>
+        <option value="DECEMBER">DECEMBER</option>
+      </select>
+
+      <input id="income" type="number" placeholder="Enter Income" />
+
+      <input id="expense" type="number" placeholder="Enter expense" />
+
+      <input type="submit" />
+    </form>
+
+    <div id="report">
+          <!-- Append your cards here -->
+    </div>
+  </body>
+</html>
+
+<script>
+  document.querySelector("form").addEventListener("submit",myfunction)
+  function myfunction(){
+    event.preventDefault()
+    // console.log("inside")
+    let debT=document.createElement("h3")
+    let mth=document.querySelector("#month").value
+    let incum=document.querySelector("#income").value
+    let kharcha=document.querySelector("#expense").value
+    //console.log(mth,incum,kharcha)
+    
+
+
+    let mOnth=document.createElement("h1")
+    mOnth.innerText=mth
+
+    let incomE=document.createElement("p")
+    incomE.innerText=incum
+
+    let expensE=document.createElement("p")
+    expensE.innerText=kharcha
+    //console.log(Number(incum),Number(kharcha),typeof(incum),typeof(kharcha))
+
+    
+    if(Number(incum)<Number(kharcha)){
+     
+      debT.innerText="DEBT"
+      debT.style.color="red"
+    }
+    else if(Number(incum)>Number(kharcha)){
+     
+      debT.innerText="SAVE"
+      debT.style.color="green"
+    }
+    else{
+    
+      debT.innerText="BREAKEVEN"
+      debT.style.color="orange"
+    }
+    let btn=document.createElement("button")
+    btn.innerText="DELETE"
+    btn.style.width="100px"
+    btn.addEventListener("click",reset)
+    function reset(){
+      event.target.parentNode.remove()
+    }
+
+
+    let dyv=document.querySelector("#report")
+    dyv.style.display="flex"
+    let carD=document.createElement("div")
+    carD.style.boxShadow= "rgba(0, 0, 0, 0.24) 0px 3px 8px"
+    // padding top right bottom left
+    carD.style.padding="10px 200px 20px 20px"
+    carD.style.marginLeft="30px"
+    // carD.style.paddingLeft="20px"
+    // carD.style.paddingRight="200px"
+    // carD.style.paddingBottom="20px"
+    // carD.style.paddingTop="10px"
+    carD.append(mOnth,incomE,expensE,debT,btn)
+    dyv.append(carD)
+
+
+  }
+  
+</script>

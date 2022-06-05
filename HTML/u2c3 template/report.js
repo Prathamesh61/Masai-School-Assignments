@@ -40,15 +40,20 @@ function report(event) {
         td8.innerText = "Async";
         td8.style.color = "red"
     }
+
     let td9 = document.createElement("td");
     td9.innerText = "Delete";
-
+    td9.addEventListener("click", myfunction);
+    function myfunction(event) {
+        event.target.parentNode.remove();
+    }
     td9.style.color = "white";
     td9.style.backgroundColor = "red";
 
+
     tr.append(td1, td2, td3, td4, td5, td6, td7, td8, td9);
     document.querySelector("tbody").append(tr);
-    tr.remove();
+
 
 
 
